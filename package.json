@@ -1,0 +1,17 @@
+{
+  "name": "node-typescript-starter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "dev": "./node_modules/.bin/tsc --watch | nodemon --inspect ./dist/server/server.js",
+    "prestart": "npm run build",
+    "start": "node ./dist/server/server.js"
+  },
+  "author": "L4ngu0r",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.3",
+    "typescript": "^3.0.1"
+  }
+}
